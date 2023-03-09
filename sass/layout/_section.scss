@@ -1,0 +1,59 @@
+/*   Secciones Global   */
+.section {
+    padding: 6rem;
+    &__title {
+        width: 100%;
+        max-width: 1080px;
+        margin: auto;
+        padding: 20px;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        color: $color-text-primary;
+    }
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        padding: 2rem;
+        letter-spacing: .05rem;
+        text-align: justify;
+        color: $color-text-primary;
+        /* margin-left: 10rem;
+        margin-right: 10rem; */
+    }
+}
+
+/*  Sección Quiero vender   */
+.section-sale {
+    background-color: $color-secondary;
+    padding: 6rem;
+    &__group {
+        align-content: center;
+        text-align: center;
+    }
+    &__btn {
+        border: 2px solid $color-btn;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 0.5rem;
+        background-color: $color-secondary;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    &__a{
+        color: $color-text-primary;
+        text-decoration: none;
+    }
+    &__btn:hover{
+        background: $color-btn;
+        color: $color-text-secondary;
+    }
+    &__a:hover{
+        color: white;
+    }
+}
+
+
