@@ -107,6 +107,7 @@ rowProduct.addEventListener('click', e => {
 		showHTML();
 	}
 });
+
 const btnPagar = document.getElementById('btn-pagar');
 const modalConfirmacion = document.getElementById('modal-carrito')
 btnPagar.addEventListener('click', ()=>{
@@ -181,6 +182,11 @@ const showHTML = () => {
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
+    const valorNeto =document.querySelector('.valor-neto'); //Variable monto neto de compra
+    const valorIva = document.querySelector('.valor-iva'); //Variable para el IVA
+
+    valorNeto.innerText = `$${Math.round(total*0.81)}`;
+    valorIva.innerText = `$${Math.round(total*0.19)}`;
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
