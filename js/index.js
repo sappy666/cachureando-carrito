@@ -1,3 +1,4 @@
+// Inicio Navbar
 $('.nav__toggle-icon').click(function () {
     "use strict";
     $('nav ul').slideToggle();
@@ -11,7 +12,9 @@ $(window).resize(function () {
         $('nav ul').removeAttr('style');
     }
 });
+// Fin Navbar
 
+// Inicio Reloj de Footer
 function clock() {
     const today = new Date();
     let h = toTwoDigits(today.getHours());
@@ -32,23 +35,26 @@ function toTwoDigits(n) {
     }
     return newString;
 }
+// Fin Reloj de Footer
 
-
-// Carrito
+// Inicio Carrito
+// Declarando variables e inicializa la variable
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'
 );
 
+// Le agregamos un evento que es hacer click, con "toggle" prendemos o apagamos hidden cart"
 btnCart.addEventListener('click', () => {
 	containerCartProducts.classList.toggle('hidden-cart');
 });
 
-/* ========================= */
+// Declarando variable cart info e inicializamos con document.querySelector
+// Declarando variable row producto info e inicializamos con document.querySelector
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
-// Lista de todos los contenedores de productos
+// Declarando e inicializando lista de todos los contenedores de productos
 const productsList = document.querySelector('.container-items');
 
 // Variable de arreglos de Productos
@@ -61,20 +67,23 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+// Agregar evento a la lista de contenedor de productos 
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
-
+		
+// Obtener información sobre el producto que se hizo clic al btn agregar carrito
 		const infoProduct = {
 			quantity: 1,
 			title: product.querySelector('h2').textContent,
 			price: product.querySelector('p').textContent,
 		};
-
+// Detectar si el producto existe en los productos		
 		const exits = allProducts.some(
 			product => product.title === infoProduct.title
 		);
-
+		
+// Si existe le suma uno a la cantidad		
 		if (exits) {
 			const products = allProducts.map(product => {
 				if (product.title === infoProduct.title) {
@@ -93,6 +102,7 @@ productsList.addEventListener('click', e => {
 	}
 });
 
+// Agarrar la lista del producto en el carrito para detectar clic en boton "x"		
 rowProduct.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {
 		const product = e.target.parentElement;
@@ -108,30 +118,35 @@ rowProduct.addEventListener('click', e => {
 	}
 });
 
+// Detectamos clic en btn pagar y confirmación para prender el modal de datos
 const btnPagar = document.getElementById('btn-pagar');
 const modalConfirmacion = document.getElementById('modal-carrito')
 btnPagar.addEventListener('click', ()=>{
 	modalConfirmacion.setAttribute("data-visible","true");
 });
 
+// Detectamos clic en btn cerrar y confirmación para apagar el modal de datos
 const btnCerrar = document.getElementById('btn-cerrar');
 btnCerrar.addEventListener('click', ()=>{
 	modalConfirmacion.setAttribute("data-visible","false");
 });
 
+// Detectamos clic en btn cerrar para apagar el modal de "compra realizada con exito"
 const modalCarritoExito = document.getElementById('modal-carrito-exito');
 const btnCerrarExito = document.getElementById('btn-cerrar-exito');
 btnCerrarExito.addEventListener('click', ()=>{
 	modalCarritoExito.setAttribute("data-visible","false");
 });
 
-const btnPagarForm = document.getElementById('btn-pagar-form');
-btnPagarForm.addEventListener('click', ()=>{
-	modalConfirmacion.setAttribute("data-visible","false");
-	modalCarritoExito.setAttribute("data-visible","true");
-});
+// Detectamos clic para apagar modal confirmacion y prender modal de "compra realizada con exito"
+//const btnPagarForm = document.getElementById('btn-pagar-form');
+//btnPagarForm.addEventListener('click', ()=>{
+	//modalConfirmacion.setAttribute("data-visible","false");
+	//modalCarritoExito.setAttribute("data-visible","true");
+//});
 
 // Funcion para mostrar  HTML
+// Funcion para elegir que mostrar, el carrito con productos o el carrito vacío
 const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
@@ -143,12 +158,14 @@ const showHTML = () => {
 		cartTotal.classList.remove('hidden');
 	}
 
-	// Limpiar HTML
+// Limpiar HTML
+// Elimina lo antiguo del carrito en el html para actualizarlo 
 	rowProduct.innerHTML = '';
 
 	let total = 0;
 	let totalOfProducts = 0;
-
+	
+// Funcion para mostrar detalles del producto en el carrito
 	allProducts.forEach(product => {
 		const containerProduct = document.createElement('div');
 		containerProduct.classList.add('cart-product');
@@ -176,9 +193,9 @@ const showHTML = () => {
         `;
 
 		rowProduct.append(containerProduct);
-
-		total =
-			total + parseInt(product.quantity * product.price.slice(1));
+		
+// Calcula el precio total
+		total = total + parseInt(product.quantity * product.price.slice(1));
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
@@ -190,3 +207,5 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+// Fin Carrito

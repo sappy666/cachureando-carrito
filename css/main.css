@@ -4436,6 +4436,12 @@
     background-color: #F3969A; }
 
 /*# sourceMappingURL=main.css.map */
+
+.imagen_nav{
+  width: 20px;
+  cursor: pointer;
+ 
+}
 .container-icon{
   position: relative;
   width: 40px;
