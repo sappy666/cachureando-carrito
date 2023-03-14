@@ -118,6 +118,7 @@ rowProduct.addEventListener('click', e => {
 	}
 });
 
+
 // Detectamos clic en btn pagar y confirmación para prender el modal de datos
 const btnPagar = document.getElementById('btn-pagar');
 const modalConfirmacion = document.getElementById('modal-carrito')
@@ -204,6 +205,8 @@ const showHTML = () => {
 
     valorNeto.innerText = `$${Math.round(total*0.81)}`;
     valorIva.innerText = `$${Math.round(total*0.19)}`;
+	
+// Escribe el precio total
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
