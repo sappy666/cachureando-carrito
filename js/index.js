@@ -124,11 +124,11 @@ btnCerrarExito.addEventListener('click', ()=>{
 	modalCarritoExito.setAttribute("data-visible","false");
 });
 
-const btnPagarForm = document.getElementById('btn-pagar-form');
-btnPagarForm.addEventListener('click', ()=>{
-	modalConfirmacion.setAttribute("data-visible","false");
-	modalCarritoExito.setAttribute("data-visible","true");
-});
+//const btnPagarForm = document.getElementById('btn-pagar-form');
+//btnPagarForm.addEventListener('click', ()=>{
+	//modalConfirmacion.setAttribute("data-visible","false");
+	//modalCarritoExito.setAttribute("data-visible","true");
+//});
 
 // Funcion para mostrar  HTML
 const showHTML = () => {

@@ -1,13 +1,15 @@
 // Validación de Formulario de calzado, chaquetas, tops, pantalones
+let buttonPay=document.getElementById("pay");
 
-function validateForm() {
+buttonPay.onclick = function(){
+//function validateForm() {
     var verify=true;
     var expRegName = /^([a-z ñáéíóú]{2,60})$/i;  
     var expRegEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,4})+$/;
-    var expRegAdress = /^[a-zA-Z0-9]*$/;
+    var expRegAdress = (/^[A-Za-z0-9\s]+$/g);
     var expRegComune = /^([a-z ñáéíóú]{2,60})$/i;  
     var expRegRegion = /^([a-z ñáéíóú]{2,60})$/i; 
-    var expRegceiver =  /^([a-z ñáéíóú]{2,60})$/i;
+    var expRegReceiver =  /^([a-z ñáéíóú]{2,60})$/i;
 
    
     var name=document.getElementById("name");
@@ -40,7 +42,23 @@ function validateForm() {
     }else if (!expRegAdress.exec(adress.value)){
         alert("El campo direccion esta mal escrito");
         adress.focus();
-        varify=false;
+        verify=false;
+    }else if (!comune.value){
+        alert("El campo comuna es requerido");
+        comune.focus();
+        verify=false;
+    }else if (!expRegComune.exec(comune.value)){
+        alert("El campo comuna esta mal escrito");
+        comune.focus();
+        verify=false;
+    }else if (!region.value){
+        alert("El campo region es requerido");
+        region.focus();
+        verify=false;
+    }else if (!expRegRegion.exec(region.value)){
+        alert("El campo region esta mal escrito");
+        region.focus();
+        verify=false;
     }else if (!receiver.value){
         alert("El campo quien recibe es requerido");
         receiver.focus();
@@ -50,13 +68,12 @@ function validateForm() {
         receiver.focus();
         verify=false;
     }
-    }
+    
     if(verify){
         alert("Guardado exitosamente");
 }
+}
 
-    buttonPay=document.getElemntById("pay");
-    buttonPay.onclick = validateForm;
 
 
 
