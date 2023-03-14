@@ -39,11 +39,11 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
                 <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html#quiero_comprar">Quiero comprar</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Calzado</li>
+                <li class="breadcrumb-item active" aria-current="page">Zapatos</li>
             </ol>
         </nav>
         <!-- Fin Breadcrumbs -->
-        <h2 class="section__title">TOPS</h2>
+        <h2 class="section__title">ZAPATOS</h2>
         <div class="container-icon">
             <div class="container-cart-icon">
                 <svg
@@ -98,7 +98,7 @@
                 <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-    </header>
+    
     <div class="container-items">
         <div class="item">
             <figure>
@@ -129,7 +129,7 @@
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
-        <div class="item">
+        <div class="item" >
             <figure>
                 <img
                     src="https://static.zara.net/photos///2023/V/1/1/p/5011/110/017/2/w/750/5011110017_6_2_1.jpg?ts=1674662216745"
@@ -152,8 +152,8 @@
                 />
             </figure>
             <div class="info-product">
-                <h2>MOCASÍN ADORNO BRILLOS</h2>
-                <h5 class="product-card__p"> Zapato plano tipo mocasín. Adorno de cadena con brillos en la parte delantera. Copete subido.<br>SKU: 47098678</h5>
+                <h2>MOCASÍN NEGRO ADORNO BRILLOS</h2>
+                <h5 class="product-card__p"> Zapato plano tipo mocasín. Adorno de cadena con brillos en la parte delantera. Copete subido. Cuero Sintetico. Muy cómodos.<br>SKU: 47098678</h5>
                 <p class="price">$34990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
@@ -175,6 +175,71 @@
     </div>
        <!--Fin Tarjetas de Productos-->
     </section>
+      <!-- FIN CONTENIDO DE LA PAGINA -->
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Mi compra</span>
+                <button id="btn-cerrar">X</button>
+            </div>
+            <div class="lista-productos">
+                <h1>RESUMEN DE COMPRA</h1>
+                <div class="info-cart-product mb-4">
+                    <span class="cantidad-producto-carrito"> 1</span>
+                    <p class="titulo-producto-carrito">Top azul</p>
+                    <span class="precio-producto-carrito">$22990</span>  
+                </div>
+            </div>
+            <form action="">
+                <h1>DIRECCION DE DESPACHO</h1>
+                <div class="form-group">
+                    <label for="name">NOMBRE</label>
+                    <input type="text" id="name" ><p>
+                    Tu nombre</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email"><p>
+                    tunombre@mail.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="adress">DIRECCION</label>
+                    <input type="text" id="adress" required><p>
+                    Calle, Ciudad, País</p>
+                </div>
+                <div class="form-group">
+                    <label for="comune">COMUNA</label>
+                    <input type="text" id="comune"><p>
+                    Comuna donde vives</p>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="region">REGIÓN</label>
+                    <input type="text" id="region" required><p>
+                    Región donde vives</p>
+                </div>
+               
+                <div class="form-group">
+                    <label for="receiver">QUIEN RECIBE</label>
+                    <input type="text" id="receiver"><p>
+                    Quien recibirá el paquete</p>
+                </div>
+                <div class="form-footer">
+                <button type="button" id="pay">PAGAR</button></div>
+            </form>
+        </div>
+    </section>
+ 
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito-exito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tu compra está siendo procesada</span>
+                <button id="btn-cerrar-exito">X</button>
+            </div>
+        </div>
+    </section>
 
     <!-- PIE DE PAGINA -->
     <footer>
@@ -193,10 +258,10 @@
         </div>
     </footer>
     <!-- Fin PIE DE PAGINA-->
-
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
     <script src="./js/index.js"></script>
+    <script src="./js/ropa.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
 </body>

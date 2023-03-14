@@ -108,7 +108,7 @@
                 <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-    </header>
+  
     <div class="container-items">
         <div class="item">
             <figure>
@@ -147,7 +147,7 @@
             </figure>
             <div class="info-product">
                 <h2>CAMISETA CROP OVERSIZE</h2>
-                <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta.  Caída perfecta.<br>SKU: 47098678</h5>
                 <p class="price">$8990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
@@ -174,7 +174,7 @@
                 />
             </figure>
             <div class="info-product">
-                <h2>TOP BÁSICO PUNTO CROPPED</h2>
+                <h2>TOP BÁSICO PUNTO</h2>
                 <h5 class="product-card__p"> Top de cuello redondo y manga corta. <br>SKU: 47098678</h5>
                 <p class="price">$18990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
@@ -183,7 +183,6 @@
     </div>
         <!--Fin Tarjetas de Productos-->
     </section>
-
     <!-- FIN CONTENIDO DE LA PAGINA -->
     <!-- ------ MODAL CARRITO ------ -->
     <section id="modal-carrito" data-visible="false">
@@ -193,48 +192,52 @@
                 <button id="btn-cerrar">X</button>
             </div>
             <div class="lista-productos">
-                <H1>RESUMEN DE COMPRA</H1>
+                <h1>RESUMEN DE COMPRA</h1>
                 <div class="info-cart-product mb-4">
                     <span class="cantidad-producto-carrito"> 1</span>
                     <p class="titulo-producto-carrito">Top azul</p>
                     <span class="precio-producto-carrito">$22990</span>  
                 </div>
             </div>
+
             <form action="">
-                <H1>DIRECCION DE DESPACHO</H1>
+                <h1>DIRECCION DE DESPACHO</h1>
                 <div class="form-group">
-                    <label for="">NOMBRE</label>
-                    <input type="text"><p>
+                    <label for="name">NOMBRE</label>
+                    <input type="text" id="name" ><p>
                     Tu nombre</p>
                 </div>
                 <div class="form-group">
-                    <label for="">EMAIL</label>
-                    <input type="text"><p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email"><p>
                     tunombre@mail.com</p>
                 </div>
                 <div class="form-group">
-                    <label for="">DIRECCION</label>
-                    <input type="text"><p>
+                    <label for="adress">DIRECCION</label>
+                    <input type="text" id="adress" required><p>
                     Calle, Ciudad, País</p>
                 </div>
                 <div class="form-group">
-                    <label for="">REGIÓN</label>
-                    <input type="text"><p>
-                    Región donde vives</p>
-                </div>
-                <div class="form-group">
-                    <label for="">COMUNA</label>
-                    <input type="text"><p>
+                    <label for="comune">COMUNA</label>
+                    <input type="text" id="comune"><p>
                     Comuna donde vives</p>
                     
                 </div>
                 <div class="form-group">
-                    <label for="">QUIEN RECIBE</label>
-                    <input type="text"><p>
+                    <label for="region">REGIÓN</label>
+                    <input type="text" id="region" required><p>
+                    Región donde vives</p>
+                </div>
+               
+                <div class="form-group">
+                    <label for="receiver">QUIEN RECIBE</label>
+                    <input type="text" id="receiver"><p>
                     Quien recibirá el paquete</p>
                 </div>
+                
                 <div class="form-footer">
-                <button type="button" id="btn-pagar-form">PAGAR</button></div>
+                <button type="button" id="pay">PAGAR</button>
+            </div>
             </form>
         </div>
     </section>
@@ -268,6 +271,7 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
     <script src="./js/index.js"></script>
+    <script src="./js/ropa.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
 </body>
