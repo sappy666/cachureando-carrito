@@ -97,7 +97,7 @@
                 <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-    </header>
+    
     <div class="container-items">
         <div class="item">
             <figure>
@@ -182,45 +182,45 @@
                 <button id="btn-cerrar">X</button>
             </div>
             <div class="lista-productos">
-                <H1>RESUMEN DE COMPRA</H1>
+                <h1>RESUMEN DE COMPRA</h1>
                 <div class="info-cart-product mb-4">
                     <span class="cantidad-producto-carrito"> 1</span>
                     <p class="titulo-producto-carrito">Top azul</p>
                     <span class="precio-producto-carrito">$22990</span>  
                 </div>
             </div>
-            <form action="">
-                <H1>DIRECCION DE DESPACHO</H1>
+            <form action="POST">
+                <h1>DIRECCION DE DESPACHO</h1>
                 <div class="form-group">
                     <label for="">NOMBRE</label>
-                    <input type="text"><p>
-                    Tu nombre</p>
+                    <input type="text" id="name" placeholder="Ingresa tu nombre" 
+                    required>
                 </div>
                 <div class="form-group">
                     <label for="">EMAIL</label>
-                    <input type="text"><p>
-                    tunombre@mail.com</p>
+                    <input type="email" id="email" placeholder="Ingresa tu email"
+                    required>
                 </div>
                 <div class="form-group">
                     <label for="">DIRECCION</label>
-                    <input type="text"><p>
-                    Calle, Ciudad, País</p>
-                </div>
-                <div class="form-group">
-                    <label for="">REGIÓN</label>
-                    <input type="text"><p>
-                    Región donde vives</p>
+                    <input type="text" id="address" placeholder="Ingresa tu dirección"
+                    required>
                 </div>
                 <div class="form-group">
                     <label for="">COMUNA</label>
-                    <input type="text"><p>
-                    Comuna donde vives</p>
+                    <input type="text" id="comune" placeholder="Ingresa tu comuna"
+                    required>
+                </div>
+                <div class="form-group">
+                    <label for="">REGION</label>
+                    <input type="text" id="region" placeholder="Ingresa tu región" 
+                    required>
                     
                 </div>
                 <div class="form-group">
                     <label for="">QUIEN RECIBE</label>
-                    <input type="text"><p>
-                    Quien recibirá el paquete</p>
+                    <input type="text" id="receiver" placeholder="Quien recibe el pedido"
+                    required>
                 </div>
                 <div class="form-footer">
                 <button type="button" id="btn-pagar-form">PAGAR</button></div>

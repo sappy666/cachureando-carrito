@@ -107,6 +107,8 @@ rowProduct.addEventListener('click', e => {
 		showHTML();
 	}
 });
+
+
 const btnPagar = document.getElementById('btn-pagar');
 const modalConfirmacion = document.getElementById('modal-carrito')
 btnPagar.addEventListener('click', ()=>{
