@@ -26,7 +26,10 @@
                 <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
                 <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
                 <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
-                </ul>
+                <li class="nav__li"><img class="imagen_nav" src="./img/busqueda(1).png" alt=""></li>
+                <li class="nav__li"><img class="imagen_nav" src="./img/usuario.png" alt=""></li>
+                <li class="nav__li"><img class="imagen_nav" src="./img/carrito-de-compras(1).png" alt=""></li>
+            </ul>
         </nav>
     </header>
     <!-- FIN ENCABEZADO DE LA PAGINA -->
@@ -90,9 +93,19 @@
                         </svg>
                     </div>
                 </div>
-                <div class="cart-total hidden">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">$200</span>
+             <div class="cart-total hidden">
+                    <div class="info-valor">
+                        <h3>Total Neto:</h3>
+                        <span class="valor-neto">$200</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>IVA:</h3>
+                        <span class="valor-iva">0</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">0</span>
+                    </div>
                     <button id="btn-pagar">PAGAR</button>
                 </div>
                 <p class="cart-empty">El carrito está vacío</p>
@@ -110,7 +123,7 @@
             <div class="info-product">
                 <h2>JEANS Z1975 FLARE FIT</h2>
                 <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Pierna entallada y bajo en evasé. Cierre frontal con cremallera<br>SKU: 47098678</h5>
-                <p class="price">$29.990</p>
+                <p class="price">$29990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -124,7 +137,7 @@
             <div class="info-product">
                 <h2>JEANS Z1975 MOM FIT</h2>
                 <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Cierre frontal con cremallera y botón  <br>SKU: 47098678</h5>
-                <p class="price">$29.990</p>
+                <p class="price">$29990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -138,7 +151,7 @@
             <div class="info-product">
                 <h2>JEANS ZW THE MARINE</h2>
                 <h5 class="product-card__p"> Jeans de tiro alto con bolsillos de plastrón en espalda. Bajo acabado sin costura. Cierre frontal con cremallera y botón.  <br>SKU: 47098678</h5>
-                <p class="price">$32.990</p>
+                <p class="price">$32990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -153,7 +166,7 @@
                 <h2>ZW JEANS CARGO</h2>
                 <h5 class="product-card__p">Jeans de tiro alto con bolsillos delanteros, laterales con solapa y de plastrón en espalda. Cierre frontal con cremallera y botón metálico.
                     <br>SKU: 47098678</h5>
-                <p class="price">$32.990</p>
+                <p class="price">$32990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -168,7 +181,7 @@
                 <h2>JEANS STRAIGHT LIGHT</h2>
                 <h5 class="product-card__p"> 
                     Jeans de tejido rígido con tiro alto y cinco bolsillos. Cierre frontal con cremallera y botón metálico. Acabado Vintage estilo 1976.<br>SKU: 47098678</h5>
-                <p class="price">$29.990</p>
+                <p class="price">$29990</p>
                 <button class="btn-add-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -196,37 +209,37 @@
                 <h1>DIRECCION DE DESPACHO</h1>
                 <div class="form-group">
                     <label for="">NOMBRE</label>
-                    <input type="text"><p>
+                    <input type="text" id="name"><p>
                     Tu nombre</p>
                 </div>
                 <div class="form-group">
                     <label for="">EMAIL</label>
-                    <input type="text"><p>
+                    <input type="text" id="email"><p>
                     tunombre@mail.com</p>
                 </div>
                 <div class="form-group">
                     <label for="">DIRECCION</label>
-                    <input type="text" required><p>
+                    <input type="text" id="adress" required><p>
                     Calle, Ciudad, País</p>
                 </div>
                 <div class="form-group">
-                    <label for="">REGIÓN</label>
-                    <input type="text" required><p>
-                    Región donde vives</p>
+                    <label for="">COMUNA</label>
+                    <input type="text" id="comune" required><p>
+                    Comuna donde vives</p>
                 </div>
                 <div class="form-group">
-                    <label for="">COMUNA</label>
-                    <input type="text"><p>
-                    Comuna donde vives</p>
+                    <label for="">REGIÓN</label>
+                    <input type="text" id="region"><p>
+                    Región donde vives</p>
                     
                 </div>
                 <div class="form-group">
                     <label for="">QUIEN RECIBE</label>
-                    <input type="text"><p>
+                    <input type="text" id="receiver"><p>
                     Quien recibirá el paquete</p>
                 </div>
                 <div class="form-footer">
-                <button type="button" id="btn-pagar-form">PAGAR</button></div>
+                <button type="button" id="pay">PAGAR</button></div>
             </form>
         </div>
     </section>
@@ -258,11 +271,13 @@
         </div>
     </footer>
     <!-- Fin PIE DE PAGINA-->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
+    
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
     <script src="./js/index.js"></script>
     <script src="./js/ropa.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
+    
 </body>
 </html>
