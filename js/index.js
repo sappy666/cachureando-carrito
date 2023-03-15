@@ -161,16 +161,17 @@ const showHTML = () => {
 
 // Limpiar HTML
 // Elimina lo antiguo del carrito en el html para actualizarlo 
+const listaProductosModal = document.querySelector(".lista-productos");
 	rowProduct.innerHTML = '';
-
+	listaProductosModal.innerHTML = '<h1>RESUMEN DE COMPRA</h1>';
 	let total = 0;
 	let totalOfProducts = 0;
 	
 // Funcion para mostrar detalles del producto en el carrito
+
 	allProducts.forEach(product => {
 		const containerProduct = document.createElement('div');
 		containerProduct.classList.add('cart-product');
-
 		containerProduct.innerHTML = `
             <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
@@ -192,8 +193,18 @@ const showHTML = () => {
                 />
             </svg>
         `;
+		const containerProductModal = document.createElement('div');
+		containerProductModal.classList.add("detalle-producto");
+		containerProductModal.innerHTML = `
+		<div class="info-cart-product">
+			<span class="cantidad-producto-carrito">${product.quantity}</span>
+			<p class="titulo-producto-carrito">${product.title}</p>
+			<span class="precio-producto-carrito">${product.price}</span>
+		</div>
+	`;
 
 		rowProduct.append(containerProduct);
+		listaProductosModal.append(containerProductModal);
 		
 // Calcula el precio total
 		total = total + parseInt(product.quantity * product.price.slice(1));
