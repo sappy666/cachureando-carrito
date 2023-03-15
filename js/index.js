@@ -55,7 +55,7 @@ const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
 // Declarando e inicializando lista de todos los contenedores de productos
-const productsList = document.querySelector('.container-items');
+const productsList = document.querySelectorAll('.container-items');
 
 // Variable de arreglos de Productos
 let allProducts = [];
@@ -68,7 +68,8 @@ const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
 // Agregar evento a la lista de contenedor de productos 
-productsList.addEventListener('click', e => {
+productsList.forEach(containerItems=>{
+	containerItems.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
 		
@@ -101,6 +102,8 @@ productsList.addEventListener('click', e => {
 		showHTML();
 	}
 });
+});
+
 
 // Agarrar la lista del producto en el carrito para detectar clic en boton "x"		
 rowProduct.addEventListener('click', e => {

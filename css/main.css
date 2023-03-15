@@ -4443,9 +4443,10 @@
  
 }
 .container-icon{
-  position: relative;
+  position: fixed;
+  right: 50px;
+  top: 150px;
   width: 40px;
-  margin: 0 40px 2rem auto;
   cursor: pointer;
 }
 

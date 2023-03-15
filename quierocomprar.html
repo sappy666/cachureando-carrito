@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tops</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body onload="clock()">
+    <!-- ENCABEZADO DE LA PAGINA -->
+    <header>
+        <!-- navbar -->
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img class="nav__img" src="./img/gancho-de-ropa(1).png">
+                </a>
+            </div>
+            <div class="nav__toggle">
+                <span class="nav__toggle-icon">☰</span>
+            </div>
+                 <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="./quierocomprar.html">Quiero comprar</a></li>
+                <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
+                <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
+                <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
+                <li class="nav__li"><img class="imagen_nav" src="./img/busqueda.png" alt=""></li>
+                <li class="nav__li"><img class="imagen_nav" src="./img/usuario.png" alt=""></li>
+                <li class="nav__li"><img class="imagen_nav" src="./img/carrito.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FIN ENCABEZADO DE LA PAGINA -->
+
+    <!--CONTENIDO DE LA PAGINA -->
+    <section class="section">
+        <!-- Inicio Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html#quiero_comprar">Quiero comprar</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Tops</li>
+            </ol>
+        </nav>
+        <!-- Fin Breadcrumbs --> 
+        <!-- Inicio Tops --> 
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <div class="info-valor">
+                        <h3>Total Neto:</h3>
+                        <span class="valor-neto">$200</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>IVA:</h3>
+                        <span class="valor-iva">0</span>
+                    </div>
+                    <div class="info-valor">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">0</span>
+                    </div>
+                                        
+                    <button id="btn-pagar">PAGAR</button>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
+        </div>
+  
+    <h2 class="section__title pt-5" id="tops">TOPS</h2>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/V/0/1/p/2142/035/250/2/w/750/2142035250_6_1_1.jpg?ts=1677071345828"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>TOP PUNTO SISA ALGODÓN</h2>
+                <h5 class="product-card__p"> Top confeccionado con tejido 100% algodón. Cuello redondo y manga sisa. <br>SKU: 47098678</h5>
+                <p class="price">$18990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2022/I/0/1/p/3471/104/406/2/w/750/3471104406_6_1_1.jpg?ts=1658906579501"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>BODY PUNTO RIB</h2>
+                <h5 class="product-card__p"> Body de escote pico y tirantes finos. Cierre en bajo con botones a presión. <br>SKU: 47098678</h5>
+                <p class="price">$23990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/0962/127/505/2/w/750/0962127505_6_1_1.jpg?ts=1673957488058"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAMISETA CROP OVERSIZE</h2>
+                <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta.  Caída perfecta.<br>SKU: 47098678</h5>
+                <p class="price">$8990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/1660/801/600/2/w/750/1660801600_6_1_1.jpg?ts=1672842258537"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>CAMISETA CROP</h2>
+                <h5 class="product-card__p"> Camiseta de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <p class="price">$7990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/3519/825/940/2/w/750/3519825940_6_1_1.jpg?ts=1676543989746"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>TOP BÁSICO PUNTO</h2>
+                <h5 class="product-card__p"> Top de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                <p class="price">$18990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+        <!-- Fin Tops --> 
+        <!-- Inicio Pantalones -->
+        <h2 class="section__title pt-5" id="pantalones">PANTALONES</h2>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/V/0/1/p/7223/025/427/2/w/750/7223025427_6_1_1.jpg?ts=1674040905861"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>JEANS Z1975 FLARE FIT</h2>
+                <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Pierna entallada y bajo en evasé. Cierre frontal con cremallera<br>SKU: 47098678</h5>
+                <p class="price">$29990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/V/0/1/p/7223/023/407/2/w/750/7223023407_6_1_1.jpg?ts=1671534709877"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>JEANS Z1975 MOM FIT</h2>
+                <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Cierre frontal con cremallera y botón  <br>SKU: 47098678</h5>
+                <p class="price">$29990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2020/S/0/1/p/8246/066/806/2/w/750/8246066806_6_1_1.jpg?ts=1596622811443"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>JEANS ZW THE MARINE</h2>
+                <h5 class="product-card__p"> Jeans de tiro alto con bolsillos de plastrón en espalda. Bajo acabado sin costura. Cierre frontal con cremallera y botón.  <br>SKU: 47098678</h5>
+                <p class="price">$32990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/6045/954/406/2/w/750/6045954406_6_1_1.jpg?ts=1672219219610"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>ZW JEANS CARGO</h2>
+                <h5 class="product-card__p">Jeans de tiro alto con bolsillos delanteros, laterales con solapa y de plastrón en espalda. Cierre frontal con cremallera y botón metálico.
+                    <br>SKU: 47098678</h5>
+                <p class="price">$32990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                    src="https://static.zara.net/photos///2023/W/0/1/p/4365/239/400/2/w/750/4365239400_6_1_1.jpg?ts=1676549960455"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>JEANS STRAIGHT LIGHT</h2>
+                <h5 class="product-card__p"> 
+                    Jeans de tejido rígido con tiro alto y cinco bolsillos. Cierre frontal con cremallera y botón metálico. Acabado Vintage estilo 1976.<br>SKU: 47098678</h5>
+                <p class="price">$29990</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+        <!-- Fin Pantalones --> 
+        <!-- Inicio Chaquetas --> 
+        <h2 class="section__title pt-5" id="chaquetas">CHAQUETAS</h2>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/V/0/1/p/3046/034/802/2/w/750/3046034802_6_1_1.jpg?ts=1671708291389"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>CAZADORA SOFT BOTONES</h2>
+                    <h5 class="product-card__p">Cazadora cropped de cuello solapa y manga larga. Bolsillos delanteros de plastrón con solapa. Cierre frontal con botones dorados con relieve. <br>SKU: 47098678</h5>
+                    <p class="price">$42990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/8495/150/630/2/w/750/8495150630_6_1_1.jpg?ts=1671554996069"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>SOBRECAMISA ESTRUCTURA</h2>
+                    <h5 class="product-card__p">Sobrecamisa de cuello solapa y manga larga acabada en puño. Bolsillos de plastrón en delantero. Cierre frontal con botones metálicos. <br>SKU: 47098678</h5>
+                    <p class="price">$42990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/I/0/1/p/3046/825/802/2/w/750/3046825802_6_1_1.jpg?ts=1661499475257"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>BOMBER EFECTO ANTE</h2>
+                    <h5 class="product-card__p"> Bomber de cuello redondo y manga larga acabada en puño. Bolsillos delanteros de vivo con botón a presión. Cierre frontal con cremallera metálica.  <br>SKU: 47098678</h5>
+                    <p class="price">$32990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/7232/651/505/2/w/750/7232651505_6_1_1.jpg?ts=1674139328491"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>CAZADORA BOMBER SATINADA</h2>
+                    <h5 class="product-card__p"> Bomber de cuello redondo y manga larga acabada en puño. Bolsillos delanteros de vivo con botón a presión. Cierre frontal con cremallera metálica. <br>SKU: 47098678</h5>
+                    <p class="price">$32990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/V/0/1/p/2969/053/800/2/w/750/2969053800_6_1_1.jpg?ts=1644913690403"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>CHAQUETA ACOLCHADA CAPUCHA</h2>
+                    <h5 class="product-card__p"> Chaqueta de cuello subido con capucha ajustable con cordón elástico y stopper. Manga larga. Bolsillos laterales con cremallera. Bajo ajustable con cordón elástico y sttoper.<br>SKU: 47098678</h5>
+                    <p class="price">$46990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Chaquetas --> 
+
+        <!-- Inicio Zapatos --> 
+        <h2 class="section__title pt-5" id="zapatos">ZAPATOS</h2>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/1/1/p/5009/110/102/2/w/750/5009110102_6_2_1.jpg?ts=1675074734744"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>ZAPATILLAS DEPORTIVAS RUNNING PLATAFORMA</h2>
+                    <h5 class="product-card__p">Zapatillas deportivas estilo running con suela de plataforma dentada. Detalles de rejilla en el corte. Cierre mediante cordones.
+                    <br>SKU: 47098678</h5>
+                    <p class="price">$16990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/I/1/1/p/4501/010/001/2/w/750/4501010001_6_1_1.jpg?ts=1666352001957"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>ZAPATILLAS DEPORTIVAS BAMBA LIMITED EDITION</h2>
+                    <h5 class="product-card__p"> Zapatillas deportivas estilo bamba en tejido. Puntera engomada. Suela con línea en contraste. Cierre mediante cordones. <br>SKU: 47098678</h5>
+                    <p class="price">$13990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" >
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/V/1/1/p/5011/110/017/2/w/750/5011110017_6_2_1.jpg?ts=1674662216745"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>ZAPATILLAS DEPORTIVAS RUNNING DENIM</h2>
+                    <h5 class="product-card__p"> Zapatillas deportivas estilo running en tejido con detalles denim. Suela con puntera engomada. Cierre mediante cordones.
+                    <br>SKU: 47098678</h5>
+                    <p class="price">$18990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/I/1/1/p/2579/010/800/2/w/750/2579010800_6_2_1.jpg?ts=1665502843112"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>MOCASÍN NEGRO ADORNO BRILLOS</h2>
+                    <h5 class="product-card__p"> Zapato plano tipo mocasín. Adorno de cadena con brillos en la parte delantera. Copete subido. Cuero Sintetico. Muy cómodos.<br>SKU: 47098678</h5>
+                    <p class="price">$34990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/W/1/1/p/5338/910/030/2/w/750/5338910030_6_2_1.jpg?ts=1646236845125"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>ZAPATILLAS DEPORTIVAS BAMBA</h2>
+                    <h5 class="product-card__p">Zapatillas deportivas estilo bamba. Detalle de pespuntes en el corte. Puntera y talón engomados. Cierre mediante cordones.<br>SKU: 47098678</h5>
+                    <p class="price">$18990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Zapatos --> 
+        <!--Fin Tarjetas de Productos-->
+    </section>
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Mi compra</span>
+                <button id="btn-cerrar">X</button>
+            </div>
+            <div class="lista-productos">
+                <h1>RESUMEN DE COMPRA</h1>
+                <div class="detalle-producto">
+                    <div class="info-cart-product mb-4">
+                        <span class="cantidad-producto-carrito"> 1</span>
+                        <p class="titulo-producto-carrito">Top azul</p>
+                        <span class="precio-producto-carrito">$22990</span>  
+                    </div>
+                </div>
+            </div>
+
+            <form action="">
+                <h1>DIRECCION DE DESPACHO</h1>
+                <div class="form-group">
+                    <label for="name">NOMBRE</label>
+                    <input type="text" id="name" ><p>
+                    Tu nombre</p>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email"><p>
+                    tunombre@mail.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="adress">DIRECCION</label>
+                    <input type="text" id="adress" required><p>
+                    Calle, Ciudad, País</p>
+                </div>
+                <div class="form-group">
+                    <label for="comune">COMUNA</label>
+                    <input type="text" id="comune"><p>
+                    Comuna donde vives</p>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="region">REGIÓN</label>
+                    <input type="text" id="region" required><p>
+                    Región donde vives</p>
+                </div>
+               
+                <div class="form-group">
+                    <label for="receiver">QUIEN RECIBE</label>
+                    <input type="text" id="receiver"><p>
+                    Quien recibirá el paquete</p>
+                </div>
+                
+                <div class="form-footer">
+                <button type="button" id="pay">PAGAR</button>
+            </div>
+            </form>7
+        </div>
+    </section>
+    <!-- ------ MODAL CARRITO ------ -->
+    <section id="modal-carrito-exito" data-visible="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Tu compra está siendo procesada</span>
+                <button id="btn-cerrar-exito">X</button>
+            </div>
+        </div>
+    </section>
+    <!-- PIE DE PAGINA -->  
+    <footer>
+        <div class="footer">
+            <img class="footer__icon" src="./img/gancho-de-ropa(1).png" alt="">
+            <div class="">
+                <div  id="clock" class="footer__clock"></div>
+                <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+                <div class="social">
+                    <a href=""><img class="social__icon" src="./img/instagram(1).png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/facebook.png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/twitter.png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN PIE DE PAGINA-->
+    
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
+    <script src="./js/index.js"></script>
+    <script src="./js/ropa.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
+</body>
+</html>
