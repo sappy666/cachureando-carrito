@@ -4443,9 +4443,10 @@
  
 }
 .container-icon{
-  position: relative;
+  position: fixed;
+  right: 50px;
+  top: 150px;
   width: 40px;
-  margin: 0 40px 2rem auto;
   cursor: pointer;
 }
 
@@ -4624,12 +4625,13 @@
   backdrop-filter: blur(4px);
   display: none;
   position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
+  transform: translate(-50%, 0);
+  top: 10%;
   left: 50%;
   z-index: 999;
   width: 100dvw;
   height: 100dvh;
+  overflow-y: scroll;
 }
 #modal-carrito[data-visible='true'],
 #modal-carrito-exito[data-visible='true']{

@@ -55,7 +55,7 @@ const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
 // Declarando e inicializando lista de todos los contenedores de productos
-const productsList = document.querySelector('.container-items');
+const productsList = document.querySelectorAll('.container-items');
 
 // Variable de arreglos de Productos
 let allProducts = [];
@@ -68,7 +68,8 @@ const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
 // Agregar evento a la lista de contenedor de productos 
-productsList.addEventListener('click', e => {
+productsList.forEach(containerItems=>{
+	containerItems.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
 		
@@ -101,6 +102,8 @@ productsList.addEventListener('click', e => {
 		showHTML();
 	}
 });
+});
+
 
 // Agarrar la lista del producto en el carrito para detectar clic en boton "x"		
 rowProduct.addEventListener('click', e => {
@@ -161,16 +164,17 @@ const showHTML = () => {
 
 // Limpiar HTML
 // Elimina lo antiguo del carrito en el html para actualizarlo 
+const listaProductosModal = document.querySelector(".lista-productos");
 	rowProduct.innerHTML = '';
-
+	listaProductosModal.innerHTML = '<h1>RESUMEN DE COMPRA</h1>';
 	let total = 0;
 	let totalOfProducts = 0;
 	
 // Funcion para mostrar detalles del producto en el carrito
+
 	allProducts.forEach(product => {
 		const containerProduct = document.createElement('div');
 		containerProduct.classList.add('cart-product');
-
 		containerProduct.innerHTML = `
             <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
@@ -192,8 +196,18 @@ const showHTML = () => {
                 />
             </svg>
         `;
+		const containerProductModal = document.createElement('div');
+		containerProductModal.classList.add("detalle-producto");
+		containerProductModal.innerHTML = `
+		<div class="info-cart-product">
+			<span class="cantidad-producto-carrito">${product.quantity}</span>
+			<p class="titulo-producto-carrito">${product.title}</p>
+			<span class="precio-producto-carrito">${product.price}</span>
+		</div>
+	`;
 
 		rowProduct.append(containerProduct);
+		listaProductosModal.append(containerProductModal);
 		
 // Calcula el precio total
 		total = total + parseInt(product.quantity * product.price.slice(1));
