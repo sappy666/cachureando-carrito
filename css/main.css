@@ -4728,8 +4728,9 @@ margin-top: 2rem;
     position: fixed;
     background-color: white;
     z-index: 1;
-    margin-top: 6em;
+    padding-top: 6em;
     margin-left: 6em;
     width: 100%;
+    border: none;
     
 }
