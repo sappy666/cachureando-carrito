@@ -4646,12 +4646,12 @@
   background-color: #FAA6BD;
   padding: 2rem;
 }
-.modal-header{
+/* .modal-header{
 
-}
-.lista-productos{ 
+} */
+/* .lista-productos{ 
 
-}
+} */
 
 #btn-cerrar,
 #btn-cerrar-exito{
@@ -4722,4 +4722,14 @@ margin-top: 2rem;
 #btn-pagar-form:focus,
 #btn-pagar:focus {
   opacity: .65;
+}
+
+#breadcrumb{
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    margin-top: 6em;
+    margin-left: 6em;
+    width: 100%;
+    
 }
