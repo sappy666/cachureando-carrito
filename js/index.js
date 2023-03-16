@@ -226,3 +226,40 @@ const listaProductosModal = document.querySelector(".lista-productos");
 };
 
 // Fin Carrito
+const btnPagarForm = document.getElementById('pay');
+btnPagarForm.addEventListener('click', ()=>{
+	const correoDestino = document.getElementById('mail');
+	enviarDetalleCompra("correo", correoDestino); 
+});
+
+// Inicio envío correo
+const nodemailer = require('nodemailer');
+
+// Función para enviar el correo electrónico
+function enviarDetalleCompra(detalleCompra, correoDestino) {
+  // Configurar el transportador de correo electrónico
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'cachureando.codecats@gmail.com', // Correo electrónico desde donde se enviará el correo
+      pass: 'C_123456' // Contraseña de la cuenta de correo electrónico
+    }
+  });
+
+  // Configurar el contenido del correo electrónico
+  const mailOptions = {
+    from: 'cachureando.codecats@gmail.com', // Correo electrónico desde donde se enviará el correo
+    to: correoDestino, // Correo electrónico de destino
+    subject: 'Detalle de compra', // Asunto del correo
+    text: detalleCompra // Contenido del correo
+  };
+
+  // Enviar el correo electrónico
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Correo enviado: ' + info.response);
+    }
+  });
+}
