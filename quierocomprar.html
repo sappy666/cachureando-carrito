@@ -11,7 +11,7 @@
 <body onload="clock()">
     <!-- ENCABEZADO DE LA PAGINA -->
     <header>
-        <!-- navbar -->
+        <!-- NAVBAR -->
         <nav class="nav">
             <div class="nav__logo">
                 <a href="./index.html">
@@ -21,31 +21,23 @@
             <div class="nav__toggle">
                 <span class="nav__toggle-icon">☰</span>
             </div>
-                 <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__a" href="./quierocomprar.html">Quiero comprar</a></li>
-                <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
-                <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
-                <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
-                <li class="nav__li"><img class="imagen_nav" src="./img/busqueda.png" alt=""></li>
-                <li class="nav__li"><img class="imagen_nav" src="./img/usuario.png" alt=""></li>
-                <li class="nav__li"><img class="imagen_nav" src="./img/carrito.png" alt=""></li>
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__a" href="./quierocomprar.html">Quiero comprar</a></li>
+                    <li class="nav__li"><a class="nav__a" href="./quierovender.html">Quiero vender</a></li>
+                    <li class="nav__li"><a class="nav__a" href="./contacto.html">Contacto</a></li>
+                    <li class="nav__li"><a class="nav__a" href="./encuesta.html">Encuesta</a></li>
+                    <li class="nav__li"><img class="imagen_nav" src="./img/busqueda.png" alt=""></li>
+                    <li class="nav__li"><img class="imagen_nav" src="./img/usuario.png" alt=""></li>
+                    <li class="nav__li"><img class="imagen_nav" src="./img/carrito.png" alt=""></li>
             </ul>
         </nav>
+        <!-- FIN NAVBAR -->
     </header>
     <!-- FIN ENCABEZADO DE LA PAGINA -->
 
     <!--CONTENIDO DE LA PAGINA -->
     <section class="section">
-        <!-- Inicio Breadcrumbs -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html">Inicio</a></li>
-                <li class="breadcrumb-item"><a class="a-breadcrumb" href="./index.html#quiero_comprar">Quiero comprar</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tops</li>
-            </ol>
-        </nav>
-        <!-- Fin Breadcrumbs --> 
-        <!-- Inicio Tops --> 
+        <!-- CARRITO -->
         <div class="container-icon">
             <div class="container-cart-icon">
                 <svg
@@ -111,159 +103,161 @@
                 <p class="cart-empty">El carrito está vacío</p>
             </div>
         </div>
-  
-    <h2 class="section__title pt-5" id="tops">TOPS</h2>
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/V/0/1/p/2142/035/250/2/w/750/2142035250_6_1_1.jpg?ts=1677071345828"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>TOP PUNTO SISA ALGODÓN</h2>
-                <h5 class="product-card__p"> Top confeccionado con tejido 100% algodón. Cuello redondo y manga sisa. <br>SKU: 47098678</h5>
-                <p class="price">$18990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
+        <!-- FIN CARRITO -->
+        <!-- INICIO TARJETAS DE PRODUCTOS -->
+        <!-- INICIO TOPS --> 
+        <h2 class="section__title pt-5" id="tops">TOPS</h2>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/V/0/1/p/2142/035/250/2/w/750/2142035250_6_1_1.jpg?ts=1677071345828"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>TOP PUNTO SISA ALGODÓN</h2>
+                    <h5 class="product-card__p"> Top confeccionado con tejido 100% algodón. Cuello redondo y manga sisa. <br>SKU: 47098678</h5>
+                    <p class="price">$18990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2022/I/0/1/p/3471/104/406/2/w/750/3471104406_6_1_1.jpg?ts=1658906579501"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>BODY PUNTO RIB</h2>
+                    <h5 class="product-card__p"> Body de escote pico y tirantes finos. Cierre en bajo con botones a presión. <br>SKU: 47098678</h5>
+                    <p class="price">$23990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/0962/127/505/2/w/750/0962127505_6_1_1.jpg?ts=1673957488058"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>CAMISETA CROP OVERSIZE</h2>
+                    <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta.  Caída perfecta.<br>SKU: 47098678</h5>
+                    <p class="price">$8990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/1660/801/600/2/w/750/1660801600_6_1_1.jpg?ts=1672842258537"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>CAMISETA CROP</h2>
+                    <h5 class="product-card__p"> Camiseta de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                    <p class="price">$7990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/3519/825/940/2/w/750/3519825940_6_1_1.jpg?ts=1676543989746"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>TOP BÁSICO PUNTO</h2>
+                    <h5 class="product-card__p"> Top de cuello redondo y manga corta. <br>SKU: 47098678</h5>
+                    <p class="price">$18990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2022/I/0/1/p/3471/104/406/2/w/750/3471104406_6_1_1.jpg?ts=1658906579501"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>BODY PUNTO RIB</h2>
-                <h5 class="product-card__p"> Body de escote pico y tirantes finos. Cierre en bajo con botones a presión. <br>SKU: 47098678</h5>
-                <p class="price">$23990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/W/0/1/p/0962/127/505/2/w/750/0962127505_6_1_1.jpg?ts=1673957488058"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>CAMISETA CROP OVERSIZE</h2>
-                <h5 class="product-card__p"> Camiseta corta amplia con cuello redondo y manga corta.  Caída perfecta.<br>SKU: 47098678</h5>
-                <p class="price">$8990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/W/0/1/p/1660/801/600/2/w/750/1660801600_6_1_1.jpg?ts=1672842258537"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>CAMISETA CROP</h2>
-                <h5 class="product-card__p"> Camiseta de cuello redondo y manga corta. <br>SKU: 47098678</h5>
-                <p class="price">$7990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/W/0/1/p/3519/825/940/2/w/750/3519825940_6_1_1.jpg?ts=1676543989746"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>TOP BÁSICO PUNTO</h2>
-                <h5 class="product-card__p"> Top de cuello redondo y manga corta. <br>SKU: 47098678</h5>
-                <p class="price">$18990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-    </div>
-        <!-- Fin Tops --> 
-        <!-- Inicio Pantalones -->
+        <!-- FIN TOPS --> 
+        <!-- INICIO PANTALONES -->
         <h2 class="section__title pt-5" id="pantalones">PANTALONES</h2>
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/V/0/1/p/7223/025/427/2/w/750/7223025427_6_1_1.jpg?ts=1674040905861"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>JEANS Z1975 FLARE FIT</h2>
-                <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Pierna entallada y bajo en evasé. Cierre frontal con cremallera<br>SKU: 47098678</h5>
-                <p class="price">$29990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/V/0/1/p/7223/025/427/2/w/750/7223025427_6_1_1.jpg?ts=1674040905861"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>JEANS Z1975 FLARE FIT</h2>
+                    <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Pierna entallada y bajo en evasé. Cierre frontal con cremallera<br>SKU: 47098678</h5>
+                    <p class="price">$29990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/V/0/1/p/7223/023/407/2/w/750/7223023407_6_1_1.jpg?ts=1671534709877"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>JEANS Z1975 MOM FIT</h2>
+                    <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Cierre frontal con cremallera y botón  <br>SKU: 47098678</h5>
+                    <p class="price">$29990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2020/S/0/1/p/8246/066/806/2/w/750/8246066806_6_1_1.jpg?ts=1596622811443"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>JEANS ZW THE MARINE</h2>
+                    <h5 class="product-card__p"> Jeans de tiro alto con bolsillos de plastrón en espalda. Bajo acabado sin costura. Cierre frontal con cremallera y botón.  <br>SKU: 47098678</h5>
+                    <p class="price">$32990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/6045/954/406/2/w/750/6045954406_6_1_1.jpg?ts=1672219219610"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>ZW JEANS CARGO</h2>
+                    <h5 class="product-card__p">Jeans de tiro alto con bolsillos delanteros, laterales con solapa y de plastrón en espalda. Cierre frontal con cremallera y botón metálico.
+                        <br>SKU: 47098678</h5>
+                    <p class="price">$32990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                        src="https://static.zara.net/photos///2023/W/0/1/p/4365/239/400/2/w/750/4365239400_6_1_1.jpg?ts=1676549960455"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>JEANS STRAIGHT LIGHT</h2>
+                    <h5 class="product-card__p"> 
+                        Jeans de tejido rígido con tiro alto y cinco bolsillos. Cierre frontal con cremallera y botón metálico. Acabado Vintage estilo 1976.<br>SKU: 47098678</h5>
+                    <p class="price">$29990</p>
+                    <button class="btn-add-cart">Añadir al carrito</button>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/V/0/1/p/7223/023/407/2/w/750/7223023407_6_1_1.jpg?ts=1671534709877"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>JEANS Z1975 MOM FIT</h2>
-                <h5 class="product-card__p">Jeans de tiro alto con cinco bolsillos. Efecto lavado. Cierre frontal con cremallera y botón  <br>SKU: 47098678</h5>
-                <p class="price">$29990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2020/S/0/1/p/8246/066/806/2/w/750/8246066806_6_1_1.jpg?ts=1596622811443"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>JEANS ZW THE MARINE</h2>
-                <h5 class="product-card__p"> Jeans de tiro alto con bolsillos de plastrón en espalda. Bajo acabado sin costura. Cierre frontal con cremallera y botón.  <br>SKU: 47098678</h5>
-                <p class="price">$32990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/W/0/1/p/6045/954/406/2/w/750/6045954406_6_1_1.jpg?ts=1672219219610"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>ZW JEANS CARGO</h2>
-                <h5 class="product-card__p">Jeans de tiro alto con bolsillos delanteros, laterales con solapa y de plastrón en espalda. Cierre frontal con cremallera y botón metálico.
-                    <br>SKU: 47098678</h5>
-                <p class="price">$32990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="https://static.zara.net/photos///2023/W/0/1/p/4365/239/400/2/w/750/4365239400_6_1_1.jpg?ts=1676549960455"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>JEANS STRAIGHT LIGHT</h2>
-                <h5 class="product-card__p"> 
-                    Jeans de tejido rígido con tiro alto y cinco bolsillos. Cierre frontal con cremallera y botón metálico. Acabado Vintage estilo 1976.<br>SKU: 47098678</h5>
-                <p class="price">$29990</p>
-                <button class="btn-add-cart">Añadir al carrito</button>
-            </div>
-        </div>
-    </div>
-        <!-- Fin Pantalones --> 
-        <!-- Inicio Chaquetas --> 
+        <!-- FIN PANTALONES --> 
+        <!-- INICIO CHAQUETAS --> 
         <h2 class="section__title pt-5" id="chaquetas">CHAQUETAS</h2>
         <div class="container-items">
             <div class="item">
@@ -337,9 +331,8 @@
                 </div>
             </div>
         </div>
-        <!-- Fin Chaquetas --> 
-
-        <!-- Inicio Zapatos --> 
+        <!-- FIN CHAQUETAS --> 
+        <!-- INICIO ZAPATOS --> 
         <h2 class="section__title pt-5" id="zapatos">ZAPATOS</h2>
         <div class="container-items">
             <div class="item">
@@ -415,11 +408,10 @@
                 </div>
             </div>
         </div>
-        <!-- Fin Zapatos --> 
-        <!--Fin Tarjetas de Productos-->
+        <!-- FIN ZAPATOS --> 
+        <!-- FIN TARJETAS DE PRODUCTOS -->
     </section>
-    <!-- FIN CONTENIDO DE LA PAGINA -->
-    <!-- ------ MODAL CARRITO ------ -->
+    <!-- MODAL CARRITO -->
     <section id="modal-carrito" data-visible="false">
         <div class="modal-content">
             <div class="modal-header">
@@ -441,44 +433,34 @@
                 <h1>DIRECCION DE DESPACHO</h1>
                 <div class="form-group">
                     <label for="name">NOMBRE</label>
-                    <input type="text" id="name" ><p>
-                    Tu nombre</p>
+                    <input type="text" id="name" placeholder="Tu nombre">
                 </div>
                 <div class="form-group">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email"><p>
-                    tunombre@mail.com</p>
+                    <input type="email" id="email" placeholder="tunombre@mail.com">
                 </div>
                 <div class="form-group">
                     <label for="adress">DIRECCION</label>
-                    <input type="text" id="adress" required><p>
-                    Calle, Ciudad, País</p>
+                    <input type="text" id="adress" placeholder="Calle, Ciudad, País" required>
                 </div>
                 <div class="form-group">
                     <label for="comune">COMUNA</label>
-                    <input type="text" id="comune"><p>
-                    Comuna donde vives</p>
-                    
+                    <input type="text" id="comune" placeholder="Comuna donde vives">
                 </div>
                 <div class="form-group">
                     <label for="region">REGIÓN</label>
-                    <input type="text" id="region" required><p>
-                    Región donde vives</p>
+                    <input type="text" id="region" placeholder="Región donde vives" required>
                 </div>
-               
                 <div class="form-group">
                     <label for="receiver">QUIEN RECIBE</label>
-                    <input type="text" id="receiver"><p>
-                    Quien recibirá el paquete</p>
+                    <input type="text" id="receiver" placeholder="Quien recibirá el paquete">
                 </div>
-                
                 <div class="form-footer">
-                <button type="button" id="pay">PAGAR</button>
-            </div>
-            </form>7
+                    <button type="button" id="pay">PAGAR</button>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- ------ MODAL CARRITO ------ -->
     <section id="modal-carrito-exito" data-visible="false">
         <div class="modal-content">
             <div class="modal-header">
@@ -487,6 +469,9 @@
             </div>
         </div>
     </section>
+    <!-- FIN MODAL CARRITO -->
+    <!-- FIN CONTENIDO DE LA PAGINA -->
+
     <!-- PIE DE PAGINA -->  
     <footer>
         <div class="footer">
@@ -495,7 +480,7 @@
                 <div  id="clock" class="footer__clock"></div>
                 <p class="footer__text">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
                 <div class="social">
-                    <a href=""><img class="social__icon" src="./img/instagram(1).png" alt=""></a>
+                    <a href=""><img class="social__icon" src="./img/instagram.png" alt=""></a>
                     <a href=""><img class="social__icon" src="./img/facebook.png" alt=""></a>
                     <a href=""><img class="social__icon" src="./img/twitter.png" alt=""></a>
                     <a href=""><img class="social__icon" src="./img/youtube.png" alt=""></a>
@@ -504,11 +489,10 @@
         </div>
     </footer>
     <!-- FIN PIE DE PAGINA-->
-     <!-- INICIO SCRIPTS -->
+    <!-- INICIO SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> <!--Menú-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
     <script src="./js/index.js"></script>
-    <script src="./js/ropa.js"></script>
+    <script src="./js/validacion.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!--Bootstrap-->
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> <!--Bootstrap-->
     <!-- FIN SCRIPTS -->
