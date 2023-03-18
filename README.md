@@ -1,5 +1,5 @@
 # Cachureando
-https://github.com/betacor/cachureando-m3-v2
+https://github.com/betacor/cachureando-carrito
 
 Proyecto Grupal Front-End
 
