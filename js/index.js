@@ -37,6 +37,7 @@ function toTwoDigits(n) {
 }
 // Fin Reloj de Footer
 
+<<<<<<< HEAD
 // Inicio Carrito
 // Declarando variables e inicializa la variable
 const btnCart = document.querySelector('.container-cart-icon');
@@ -214,3 +215,5 @@ const showHTML = () => {
 };
 
 // Fin Carrito
+=======
+>>>>>>> main
