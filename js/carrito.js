@@ -199,7 +199,7 @@ const nodemailer = require('nodemailer');
 // Función para enviar el correo electrónico
 function enviarDetalleCompra(detalleCompra, correoDestino) {
   // Configurar el transportador de correo electrónico
-  const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'cachureando.codecats@gmail.com', // Correo electrónico desde donde se enviará el correo
